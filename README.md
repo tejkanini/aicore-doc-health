@@ -1,108 +1,155 @@
 # AI Core Doc Guardian
 
-AI Core Doc Guardian is an intelligent documentation quality and diagnostics engine built on Docusaurus and AI Core.
+AI Core Doc Guardian is an AI-powered documentation quality and diagnostics engine built for Docusaurus and AI Core.
 
-It continuously analyzes documentation using embeddings, semantic reasoning, and optional execution checks to detect gaps, inconsistencies, and outdated content.
+It continuously audits documentation using semantic embeddings, reasoning, and optional execution checks to detect gaps, inconsistencies, and outdated content.
 
-Instead of treating documentation as static text, Doc Guardian treats it as structured knowledge that can be validated, improved, and maintained automatically.
+The goal is simple: make documentation reliable, accurate, and self-improving.
 
 ---
 
-## Why this exists
+## Problem
 
-Documentation naturally degrades over time. Manual review does not scale.
+Documentation degrades over time.
 
-Common problems include:
-- outdated instructions
+Common issues include:
+
+- outdated steps
 - broken links
 - missing prerequisites
-- duplicated or conflicting content
+- duplicated or conflicting explanations
 - undocumented features
-- unclear explanations
-- high support load caused by poor docs
+- unclear instructions
+- increased support load caused by poor docs
 
-
-Doc Guardian uses AI Core to continuously audit and improve documentation quality.
+Manual review does not scale.
 
 ---
 
-## What this project is
+## Value Proposition
 
-Doc Guardian is a DocOps intelligence system that:
+Doc Guardian uses AI Core to automatically understand, audit, and improve documentation.
 
-- understands documentation semantically
-- detects logical and structural issues
-- identifies knowledge gaps
-- suggests improvements
-- optionally validates commands using MCP
+It provides:
 
-It uses AI Core’s embeddings, reasoning, and orchestration capabilities to perform deep analysis that rule-based tools cannot.
+- semantic understanding of content
+- reasoning-based issue detection
+- automated rewrite suggestions
+- documentation health scoring
+- optional command validation
+
+This reduces onboarding time, improves developer experience, and lowers support costs.
+
+---
+
+## How It Uses AI Core
+
+Doc Guardian directly leverages AI Core capabilities.
+
+### Embeddings
+- generate semantic vectors for each documentation chunk
+- detect duplicates and overlaps
+- find related or conflicting sections
+
+### Vector Catalog
+- store and search documentation semantically
+- enable similarity and coverage analysis
+
+### LLM Reasoning
+- validate logical step order
+- detect missing prerequisites
+- identify ambiguity
+- suggest clearer rewrites
+
+### Structured Planning
+- analyze procedural flows
+- verify instruction sequences
+
+### Optional MCP Execution
+- validate commands in a safe sandbox
+- confirm examples actually work
+
+Without AI Core, these checks would require manual effort or weak rule-based tools.
 
 ---
 
 ## Core Capabilities
 
-### Documentation Quality Scanning
-- broken links
-- missing references
-- outdated commands
-- inconsistent terminology
-- unclear or overly complex language
-
-### Semantic Intelligence (AI Core Embeddings)
-- detect duplicate or overlapping pages
-- identify conflicting instructions
-- cluster similar topics
-- find undocumented features
-
-### Reasoning (AI Core LLM)
-- validate step order
-- detect missing prerequisites
-- flag ambiguous instructions
-- suggest rewrites
-- generate clearer explanations
-
-### Documentation Health Score
-- per-page quality score
-- overall documentation health rating
-- prioritized issues list
-
-### Optional MCP Validation
-- execute commands in sandbox
-- verify examples actually work
-- flag failing instructions
-
----
-
-## How it uses AI Core
-
-This project directly leverages AI Core capabilities:
-
-- Embeddings API for semantic understanding
-- Vector Catalog for similarity search
-- LLM reasoning for instruction validation
-- Structured planning for step analysis
-- MCP tools for optional execution checks
-
-Without AI Core, these checks would not be possible or would require heavy manual review.
-
----
-
-## Architecture
-
-Docs (Docusaurus)
-    ↓
-Ingestion + Chunking
-    ↓
-AI Core Embeddings → Vector Catalog
-    ↓
-AI Core Reasoning Engine
-    ↓
-Optional MCP Execution Checks
-    ↓
-Diagnostics Dashboard
+- Documentation ingestion and parsing
+- Semantic similarity detection
+- Duplicate content detection
+- Gap and coverage analysis
+- Logical step validation
+- Clarity and readability suggestions
+- Broken link detection
+- Documentation health score
+- Web dashboard for insights
+- Optional command execution validation
 
 ---
 
 ## Repository Structure
 
+```
+aicore-doc-guardian/
+│
+├─ docs/                       # Docusaurus documentation content (input)
+│
+├─ scripts/
+│   ├─ analyze_docs.py         # Run full diagnostics
+│   ├─ embed_docs.py           # Generate embeddings
+│   └─ health_report.py        # Produce summary report
+│
+├─ src/
+│   ├─ ingestion/              # File loading and chunking
+│   ├─ embeddings/             # AI Core embedding + vector logic
+│   ├─ analysis/               # Reasoning and diagnostics
+│   ├─ validators/             # Links and structure checks
+│   ├─ mcp/                    # Optional execution tools
+│   ├─ api/                    # Backend service
+│   └─ dashboard/              # Docusaurus/React UI
+│
+├─ tests/
+├─ requirements.txt
+├─ package.json
+├─ README.md
+└─ .env.example
+```
+
+---
+
+## Quick Start
+
+Install dependencies:
+
+```
+pip install -r requirements.txt
+```
+
+Run analysis:
+
+```
+python scripts/analyze_docs.py ./docs
+```
+
+Start dashboard:
+
+```
+npm run start
+```
+
+---
+
+## Example Output
+
+- Documentation Health Score: 82/100
+- 12 broken links detected
+- 5 unclear sections flagged
+- 3 duplicate pages detected
+- 4 missing topic suggestions
+
+---
+
+## Vision
+
+Turn documentation from static text into an intelligent system that continuously validates and improves itself using AI Core.
