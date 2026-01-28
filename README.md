@@ -1,12 +1,16 @@
 # AI Core Doc Health
 
-AI Core Doc Guardian is an AI-powered documentation quality and diagnostics engine built for Docusaurus and AI Core.
+AI Core Doc Health is an AI-powered documentation quality and diagnostics engine built for Docusaurus and AI Core.
 
 It continuously audits documentation using semantic embeddings, reasoning, and optional execution checks to detect gaps, inconsistencies, and outdated content.
 
 The goal is simple: make documentation reliable, accurate, and self-improving.
 
----
+
+## Vision
+
+Turn documentation from static text into an intelligent system that continuously validates and improves itself using AI Core.
+
 
 ## Problem
 
@@ -24,11 +28,10 @@ Common issues include:
 
 Manual review does not scale.
 
----
 
 ## Value Proposition
 
-Doc Guardian uses AI Core to automatically understand, audit, and improve documentation.
+Doc Health uses AI Core to automatically understand, audit, and improve documentation.
 
 It provides:
 
@@ -44,7 +47,7 @@ This reduces onboarding time, improves developer experience, and lowers support 
 
 ## How It Uses AI Core
 
-Doc Guardian directly leverages AI Core capabilities.
+Doc Health directly leverages AI Core capabilities.
 
 ### Embeddings
 - generate semantic vectors for each documentation chunk
@@ -91,7 +94,7 @@ Without AI Core, these checks would require manual effort or weak rule-based too
 ## Repository Structure
 
 ```
-aicore-doc-guardian/
+aicore-doc-health/
 │
 ├─ docs/                       # Docusaurus documentation content (input)
 │
@@ -150,6 +153,4 @@ npm run start
 
 ---
 
-## Vision
 
-Turn documentation from static text into an intelligent system that continuously validates and improves itself using AI Core.
