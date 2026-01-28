@@ -10,7 +10,7 @@ Instead of treating documentation as static text, Doc Guardian treats it as stru
 
 ## Why this exists
 
-Documentation naturally degrades over time.
+Documentation naturally degrades over time. Manual review does not scale.
 
 Common problems include:
 - outdated instructions
@@ -21,7 +21,6 @@ Common problems include:
 - unclear explanations
 - high support load caused by poor docs
 
-Manual review does not scale.
 
 Doc Guardian uses AI Core to continuously audit and improve documentation quality.
 
@@ -36,8 +35,6 @@ Doc Guardian is a DocOps intelligence system that:
 - identifies knowledge gaps
 - suggests improvements
 - optionally validates commands using MCP
-
-It is not a simple linter.
 
 It uses AI Core’s embeddings, reasoning, and orchestration capabilities to perform deep analysis that rule-based tools cannot.
 
