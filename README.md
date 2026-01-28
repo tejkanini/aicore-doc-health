@@ -1,4 +1,4 @@
-# AI Core Doc Guardian
+# AI Core Doc Health
 
 AI Core Doc Guardian is an AI-powered documentation quality and diagnostics engine built for Docusaurus and AI Core.
 
